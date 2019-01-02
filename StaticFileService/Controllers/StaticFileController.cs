@@ -25,7 +25,7 @@ namespace StaticFileService.Controllers
         [HttpGet("[action]")]
         public async Task PlayQuakeSound([FromQuery] string fileName, [FromQuery] SoundVariation variation = SoundVariation.Male)
         {
-            var model = new QuakeSoundModel(fileName, "QuakeSounds", ".wav", variation);
+            var model = new QuakeSoundModel(fileName, "QuakeSounds", "wav", variation);
 
             var result = await Get<QuakeSoundModel>(model);
         }

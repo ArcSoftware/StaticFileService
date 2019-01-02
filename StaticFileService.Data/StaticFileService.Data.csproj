@@ -8,4 +8,13 @@
     <ProjectReference Include="..\StaticFileService.Common\StaticFileService.Common.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <None Update="StaticFiles\QuakeSounds\dominating.wav">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="StaticFiles\QuakeSounds\godlike.wav">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
 </Project>
